@@ -16,6 +16,17 @@
     "dotenv": ["{.env,.env.*}"],
     "tailwindcss": ["*.css"],
   },
+  "languages": {
+    "PHP": {
+      "formatter": {
+        "external": {
+          "arguments": ["-"],
+          "command": "php-cs-fixer-stdin",
+        },
+      },
+      "tab_size": 4,
+    },
+  },
   "linked_edits": true,
   "minimap": {
     "show": "always",
@@ -46,7 +57,8 @@
   "wsl_connections": [
     {
       "distro_name": "Ubuntu",
-      "user": "radoslavg",
+      "user": null,
+      "projects": [],
     },
   ],
 }
